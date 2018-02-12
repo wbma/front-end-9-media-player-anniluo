@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<input [(ngModel)] = "mediaProvider.username">
+<br>
+<input [(ngModel)] = "mediaProvider.password">
+<br>
+<button (click)="mediaProvider.login()">Login</button>
+
+{{ mediaProvider.status }}
