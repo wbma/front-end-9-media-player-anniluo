@@ -7,10 +7,12 @@
   </ion-navbar>
 </ion-header>
 
-<input [(ngModel)] = "mediaProvider.username">
-<br>
-<input [(ngModel)] = "mediaProvider.password">
-<br>
-<button (click)="mediaProvider.login()">Login</button>
+<ion-content>
+  <input [(ngModel)] = "mediaProvider.username">
+  <br>
+  <input type="password" [(ngModel)] = "mediaProvider.password">
+  <br>
+  <button (click)="mediaProvider.login()">Login</button>
+  {{ mediaProvider.status }}
+</ion-content>
 
-{{ mediaProvider.status }}
